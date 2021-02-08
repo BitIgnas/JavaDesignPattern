@@ -1,4 +1,4 @@
-package DesignPatterns.Creational.Singleton;
+package DesignPatterns.Creational.Singleton.Example1;
 
 /**
  * Use singleton to ensure that we would only one ComputerProducer per program.

@@ -8,4 +8,18 @@ package DesignPatterns.Creational.Builder;
 public class BuilderMain {
 
     //Let's say we are creating a game with robots.
+    public static void main(String[] args) {
+
+        RobotBuilder builder = new OldRobotBuilder(); //Created enviroment that robot can be created
+
+        RobotEngineer engineer = new RobotEngineer(builder);
+
+        engineer.constructRobot();
+
+        Robot firstRobot = engineer.getRobot();
+        System.out.println(firstRobot);
+
+        engineer = new RobotEngineer(new TeslaRobotBuilder());
+        engineer.constructRobot();
+    }
 }
